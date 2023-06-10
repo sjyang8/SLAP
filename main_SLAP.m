@@ -50,8 +50,8 @@ for cur=1:num_Pixel
     X=[X;sub_I{cur}];
     sub_cluster_n(cur)=size(sub_I{cur},1);
 end
-save_path=[img_name 'SP' num2str(num_Pixel) '_SLAP_feature_graph_parfor/' ];
-save_path2=[img_name 'SP' num2str(num_Pixel) 'SVM_results/' 'lambda' num2str(lambda) 'gama' num2str(gama) '/' 'ratio' num2str(per_ratio) '/' 'r' num2str(par.r) '/'];
+save_path=['./' img_name 'SP' num2str(num_Pixel) '_SLAP_feature_graph_parfor/' ];
+save_path2=['./' img_name 'SP' num2str(num_Pixel) 'SVM_results/' 'lambda' num2str(lambda) 'gama' num2str(gama) '/' 'ratio' num2str(per_ratio) '/' 'r' num2str(par.r) '/'];
 if DEBUG==0
 	res_file_name1= [img_name 'SP' num2str(num_Pixel) 'lambda' num2str(lambda)  'gama' num2str(gama) '.mat'];
 else
